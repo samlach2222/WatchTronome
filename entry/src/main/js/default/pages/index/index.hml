@@ -1,0 +1,23 @@
+<div class="container" onswipe="touchMove">
+    <div class="body">
+        <div class="main">
+            <div class="slider">
+                <text class="sliderValue"> <!-- Tempo slider value -->
+                    {{ value }}
+                </text>
+                <slider min="0" max="300" value="{{ value }}" class="sliderTempo" onchange="SliderSetValue" onswipe="touchMoveNotQuit"></slider> <!-- Tempo slider -->
+            </div>
+            <div class="play">
+                <image src='{{ buttonLaunch }}' class="PlayBtn" ref="PlusBtn" id="PlusBtn" grab:click="PlayTempo"></image> <!-- Play/Stop button -->
+            </div>
+            <div class="footer">
+                <image src='/common/images/UpPanel.png' class="rhythmPanel"></image> <!-- Panel change indicator -->
+            </div>
+        </div>
+        <div class="plusMinusBtn">
+            <image src='/common/images/PlusButton.png' class="SetBtn" ref="PlusBtn" id="PlusBtn" grab:click="PlusBpm" onlongpress="PlusBpmLP"></image> <!-- + button for the tempo value -->
+            <image src='/common/images/MinusButton.png' class="SetBtn" ref="MinusBtn" id="MinusBtn" grab:click="MinusBpm" onlongpress="MinusBpmLP"></image> <!-- - button for the tempo value -->
+        </div>
+    </div>
+</div>
+

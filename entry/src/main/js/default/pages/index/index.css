@@ -1,0 +1,133 @@
+@import '../../common/style.css';
+
+/* -------------------------- */
+/* |       Main Panels      | */
+/* -------------------------- */
+
+.container { /* Main div */
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+    flex-direction: column;
+}
+
+.body {
+    width: 454px;
+    height: 454px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 394px;
+    height: 454px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------- */
+/* |        Page Panel      | */
+/* -------------------------- */
+
+.footer {
+    background-color: #1a1a1a;
+    width: 454px;
+    height: 40px;
+    align-items: center;
+}
+
+.rhythmPanel {
+    width: 454px;
+    height: 40px;
+}
+
+/* -------------------------- */
+/* |     Minus Plus Panel   | */
+/* -------------------------- */
+
+.plusMinusBtn {
+    width: 60px;
+    height: 454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SetBtn {
+    width: 60px;
+    height: 33%;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0px;
+    text-align: left;
+}
+
+#PlusBtn {
+    background-color: purple;
+    margin-bottom: 7px;
+}
+
+#MinusBtn {
+    background-color: rebeccapurple;
+    margin-top: 7px;
+}
+
+/* -------------------------- */
+/* |      Slider Panel      | */
+/* -------------------------- */
+
+.slider {
+    width: 454px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderTempo {
+    width: 250px;
+    height: 57px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    selected-color: mediumpurple;
+    block-color: rebeccapurple;
+}
+
+.sliderValue {
+    font-size: 38px;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    border-width: 3px;
+    border-color: rebeccapurple;
+    border-radius: 50px;
+    margin-top: 20%;
+}
+
+/* -------------------------- */
+/* |    Play Button Panel   | */
+/* -------------------------- */
+
+.play {
+    width: 454px;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.PlayBtn {
+    width: 120px;
+    height: 120px;
+    font-size: 30px;
+    text-align: center;
+}
